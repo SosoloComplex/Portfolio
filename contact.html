@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | samson Haule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <button id="theme-toggle">Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+        
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="email-error" class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <span id="phone-error" class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="work">Work Inquiry</option>
+                    <option value="collab">Collaboration</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="form-success" class="hidden">
+            <p>Thank you for your message! I'll get back to you soon.</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Other Ways to Reach Me</h2>
+            <p>Email: <a href="samsonhaule390@gmail.com">samsonhaule390@gmail.com</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/samsonhaule</a></p>
+            <p>GitHub: <a href="https://github.com/SosoloComplex" target="_blank">github.com/samsonhaule</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Samson haule. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
